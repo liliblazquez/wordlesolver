@@ -203,7 +203,7 @@ def play_wordle():
     - Iterative problem-solving: Montfort et al. (2012)
     - UI timing: Norman (1998), Kuniavsky (2008, 2010)
     """
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+    driver = webdriver.Chrome()
     driver.get("https://www.nytimes.com/games/wordle/index.html")
     wait = WebDriverWait(driver, 1)
 
